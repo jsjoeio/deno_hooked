@@ -128,7 +128,7 @@ export function test(
 /**
  * Creates an environment in which all tests and hooks are grouped together.
  */
-export function group(name: string, fn: () => void): void {
+export function describe(name: string, fn: () => void): void {
   globalContext.stack.push({
     name,
 

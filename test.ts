@@ -3,7 +3,7 @@ import {
   afterEach,
   beforeAll,
   beforeEach,
-  group,
+  describe,
   test,
 } from "./mod.ts";
 
@@ -59,21 +59,21 @@ test("3", async () => {
   log("3");
 });
 
-group("group 1", () => {
+describe("describe 1", () => {
   beforeAll(() => {
-    log("before all group 1");
+    log("before all describe 1");
   });
 
   beforeEach(() => {
-    log("before each group 1");
+    log("before each describe 1");
   });
 
   afterEach(() => {
-    log("after each group 1");
+    log("after each describe 1");
   });
 
   afterAll(() => {
-    log("after all group 1");
+    log("after all describe 1");
   });
 
   test("1", () => {
@@ -94,42 +94,42 @@ group("group 1", () => {
   });
 });
 
-group("group 2", () => {
+describe("describe 2", () => {
   beforeAll(() => {
-    log("before all group 2");
+    log("before all describe 2");
   });
 
   beforeEach(() => {
-    log("before each group 2");
+    log("before each describe 2");
   });
 
   afterEach(() => {
-    log("after each group 2");
+    log("after each describe 2");
   });
 
   afterAll(() => {
-    log("after all group 2");
+    log("after all describe 2");
   });
 
   test("1", () => {
     log("1");
   });
 
-  group("group 3", () => {
+  describe("describe 3", () => {
     beforeAll(() => {
-      log("before all group 3");
+      log("before all describe 3");
     });
 
     beforeEach(() => {
-      log("before each group 3");
+      log("before each describe 3");
     });
 
     afterEach(() => {
-      log("after each group 3");
+      log("after each describe 3");
     });
 
     afterAll(() => {
-      log("after all group 3");
+      log("after all describe 3");
     });
 
     test("1", () => {
